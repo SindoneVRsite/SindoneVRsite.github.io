@@ -20,8 +20,8 @@
 
 			<!-- ASSETS -->
 			<a-assets>
-			    <a-asset-item id="tree-obj" src="/Models/Tree/palm.obj"></a-asset-item>
-			    <a-asset-item id="tree-mtl" src="/Models/Tree/palm.mtl"></a-asset-item>
+			    <a-asset-item id="tree-obj" src="/Models/Tree/tree1.obj"></a-asset-item>
+			    <a-asset-item id="tree-mtl" src="/Models/Tree/tree1.mtl"></a-asset-item>
 			    <a-asset-item id="bench-obj" src="/Models/Bench/bench2.obj"></a-asset-item>
 			    <a-asset-item id="bench-mtl" src="/Models/Bench/bench2.mtl"></a-asset-item>
 			</a-assets>
@@ -33,23 +33,7 @@
             
 
 
-            <!--Grid 
-
-
-            <a-box position ="75 1 0" height="1" width="250" depth="1" color ="red"></a-box>
-            <a-box position ="0 10 0" height="20" width="1" depth="1" color ="green"></a-box>
-            <a-box position ="0 0 -100" height="1" width="1" depth="300" color ="blue"></a-box>
-                        
-            <a-box position ="50.5 1 -100" height=" 1" width =" 1" depth =" 300" color ="grey"></a-box>
-            <a-box position ="100.5 1 -100" height=" 1" width =" 2" depth =" 300" color ="black"></a-box>
-            <a-box position ="150.5 1 -100" height=" 1" width =" 1" depth =" 300" color ="grey"></a-box>
-
-            <a-box position ="50 1 50.5" height=" 1" width ="200" depth ="1" color ="grey"></a-box>
-            <a-box position ="50 1 -50.5" height=" 1" width ="200" depth ="1" color ="grey"></a-box>
-            <a-box position ="50 1 -100.5" height=" 1" width ="200" depth ="2" color ="black"></a-box>
-            <a-box position ="50 1 -150.5" height=" 1" width ="200" depth ="1" color ="grey"></a-box>
-
-            -->
+            
 
 			<!-- sky -->
 			<a-sky src="images/sky.jpg"></a-sky>
@@ -229,64 +213,15 @@
 
 			<!-- =====Left side of the area===== -->
 
-			<!-- left pedestal ground-->
-			<a-entity geometry="primitive: box; width: 10; height: 30; depth: .15" position="-35.5 0 -175" rotation="90 0 0" material="side: double; src:url(images/wood.jpg); repeat: 3.5 5"></a-entity>
-
-			<!-- platform/pedastal -->
-			<a-entity static-body geometry="primitive: box; width: 11; height: 20; depth: 5" position="-38.5 0 -175" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5">
-				<!-- central pillar -->
-				<!-- pillar base -->
-				<a-entity geometry="primitive: box; width: 3; height: 3; depth: 3" position="0 0 -3" rotation="0 0 0" material="side: double; color: #3D2918; repeat: 3.5 5">
-					<a-entity position="0 0 -12" geometry="primitive: cylinder; height: 50; radius: 1.25" rotation="90 0 0" material="side: front; color: #7A5230"></a-entity>
-				</a-entity>
-				<!-- statue pedastal -->
-				<a-entity geometry="primitive: box; width: 1; height: 1; depth: 2" position="4.5 9 -3" rotation="0 0 45" material="side: double; color: #B0AFAE; repeat: 3.5 5">
-					<a-entity geometry="primitive: box; width: 1.3; height: 1.3; depth: .1" position="0 0 -1" rotation="0 0 0" material="side: double; color: #B0AFAE; repeat: 3.5 5"></a-entity>
-					<a-entity geometry="primitive: box; width: 1.3; height: 1.3; depth: .1" position="0 0 .4" rotation="0 0 0" material="side: double; color: #B0AFAE; repeat: 3.5 5"></a-entity>
-				</a-entity>
-				<!-- north right statue pedastal -->
-				<a-entity geometry="primitive: box; width: 1; height: 1; depth: 2" position="4.5 -9 -3" rotation="0 0 45" material="side: double; color: #B0AFAE; repeat: 3.5 5">
-					<a-entity geometry="primitive: box; width: 1.3; height: 1.3; depth: .1" position="0 0 -1" rotation="0 0 0" material="side: double; color: #B0AFAE; repeat: 3.5 5"></a-entity>
-					<a-entity geometry="primitive: box; width: 1.3; height: 1.3; depth: .1" position="0 0 .4" rotation="0 0 0" material="side: double; color: #B0AFAE; repeat: 3.5 5"></a-entity>
-				</a-entity>
-				<!-- middle right statue pedastal -->
-				<a-entity geometry="primitive: box; width: 1; height: 1; depth: 2" position="9.3 0 -.5" rotation="0 0 0" material="side: double; color: #B0AFAE; repeat: 3.5 5">
-					<a-entity geometry="primitive: box; width: 1.3; height: 1.3; depth: .1" position="0 0 -1" rotation="0 0 0" material="side: double; color: #B0AFAE; repeat: 3.5 5"></a-entity>
-					<a-entity geometry="primitive: box; width: 1.3; height: 1.3; depth: .1" position="0 0 .4" rotation="0 0 0" material="side: double; color: #B0AFAE; repeat: 3.5 5"></a-entity>
-				</a-entity>
-
+			
+			
 			</a-entity>
 			<!-- pillar top platform (needed for physics/gravity/location)-->
 			<a-entity static-body geometry="primitive: box; width: 4; height: 4; depth: .5" position="-38.5 40 -175" rotation="90 0 0" material="side: double; color: #3D2918; repeat: 3.5 5"></a-entity>
 
 
 
-			<!-- staris -->
-			<!-- south stairs -->
-			<a-entity static-body geometry="primitive: box; width: 1; height: 4; depth: .5" position="-36.5 0 -165" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-			<a-entity static-body geometry="primitive: box; width: 1; height: 4; depth: .5" position="-37.5 .5 -165" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-			<a-entity static-body geometry="primitive: box; width: 1; height: 4; depth: .5" position="-38.5 1 -165" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-			<a-entity static-body geometry="primitive: box; width: 1; height: 4; depth: .5" position="-39.5 1.5 -165" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-			<a-entity static-body geometry="primitive: box; width: 1; height: 4; depth: .5" position="-40.5 2 -165" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-			<a-entity static-body geometry="primitive: box; width: 3; height: 4; depth: .5" position="-42.5 2.25 -165" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-
-			<!-- north stairs -->
-			<a-entity static-body geometry="primitive: box; width: 1; height: 4; depth: .5" position="-36.5 0 -185" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-			<a-entity static-body geometry="primitive: box; width: 1; height: 4; depth: .5" position="-37.5 .5 -185" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-			<a-entity static-body geometry="primitive: box; width: 1; height: 4; depth: .5" position="-38.5 1 -185" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-			<a-entity static-body geometry="primitive: box; width: 1; height: 4; depth: .5" position="-39.5 1.5 -185" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-			<a-entity static-body geometry="primitive: box; width: 1; height: 4; depth: .5" position="-40.5 2 -185" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-			<a-entity static-body geometry="primitive: box; width: 3; height: 4; depth: .5" position="-42.5 2.25 -185" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-
-			<!-- east staris -->
-
-			<a-entity static-body geometry="primitive: box; width: 1; height: 20; depth: .5" position="-44.5 1.5 -175" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-			<a-entity static-body geometry="primitive: box; width: 1; height: 20; depth: .5" position="-45.5 1 -175" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-			<a-entity static-body geometry="primitive: box; width: 1; height: 20; depth: .5" position="-46.5 .5 -175" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-			<a-entity static-body geometry="primitive: box; width: 4; height: 20; depth: .25" position="-48.5 .25 -175" rotation="90 0 0" material="side: double; color: #b7b2af; repeat: 3.5 5"></a-entity>
-
-
-
+			
 			<!-- LEFT SEMICIRCLE -->
 			<a-entity position="-78 .12 -175" rotation="90 0 0" geometry="primitive: ring; radiusInner: 75; radiusOuter: 80; thetaStart: -63; thetaLength: 125" material="side: double; src:url(images/wood.jpg); repeat: 60 60"></a-entity>
 
@@ -385,10 +320,7 @@
 			<!-- main start circle AKA origin -->
             <a-entity geometry="primitive: circle; radius: 15" position="0 .1 0" rotation="90 0 0" material="side: double; src:url(images/wood.jpg); repeat: 10 10"></a-entity>
 
-            <!-- PARK BENCH!!!!!!
-            <a-entity position="0 0 8" rotation="0 180 0" scale="1.35 1.35 1.35" obj-model="obj: #bench-obj; mtl: #bench-mtl"></a-entity>
-            <a-entity position="0 0 9.5" rotation="0 0 0" scale="1.35 1.35 1.35" obj-model="obj: #bench-obj; mtl: #bench-mtl"></a-entity>
-            -->
+            
             <!-- trees -->
             <!-- trees by the statue stand -->
             <a-entity position="10 2.5 -60" rotation="0 0 0" scale="1.5 1.5 1.5" obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
@@ -568,31 +500,7 @@
           <!-- concrete asphalt arms - bottom right -->
           <a-entity geometry="primitive: box; width: 11; height: 4; depth: .2" position="-8 0 45" rotation="90 0 0" material="side: double; color: #b7b6b5; repeat: 3.5 5"></a-entity>
 
-          <!-- north west buildings -->
-          <a-entity static-body geometry="primitive: box; width: 25; height: 60; depth: .12" position="20 .1 -30" rotation="90 0 0" material="side: double; color: #838782; repeat: 3.5 5">
-          	<!-- right building -->
-          	<a-entity geometry="primitive: box; width: 10; height: 7; depth: 15" position="0 10 0" rotation="90 0 0" material="side: double; color: #a6aba4; repeat: 3.5 5"></a-entity>
-          	<a-entity geometry="primitive: box; width: 10.5; height: .25; depth: 15.5" position="0 10 0" rotation="90 0 0" material="side: double; color: #a6aba4; repeat: 3.5 5"></a-entity>
-          	<a-entity geometry="primitive: box; width: 10.5; height: .25; depth: 15.5" position="0 10 -1" rotation="90 0 0" material="side: double; color: #a6aba4; repeat: 3.5 5"></a-entity>
-          	<a-entity geometry="primitive: box; width: 10.5; height: .25; depth: 15.5" position="0 10 -3.5" rotation="90 0 0" material="side: double; color: #a6aba4; repeat: 3.5 5"></a-entity>
-          	<!-- left building -->
-          	<a-entity geometry="primitive: box; width: 10; height: 7; depth: 15" position="0 -20 0" rotation="90 0 0" material="side: double; color: #a6aba4; repeat: 3.5 5"></a-entity>
-          	<a-entity geometry="primitive: box; width: 10.5; height: .25; depth: 15.5" position="0 -20 0" rotation="90 0 0" material="side: double; color: #a6aba4; repeat: 3.5 5"></a-entity>
-          	<a-entity geometry="primitive: box; width: 10.5; height: .25; depth: 15.5" position="0 -20 -1" rotation="90 0 0" material="side: double; color: #a6aba4; repeat: 3.5 5"></a-entity>
-          	<a-entity geometry="primitive: box; width: 10.5; height: .25; depth: 15.5" position="0 -20 -3.5" rotation="90 0 0" material="side: double; color: #a6aba4; repeat: 3.5 5"></a-entity>
-
-          	<!-- right statue pedastel -->
-          	<a-entity geometry="primitive: box; width: 1; height: 1; depth: 2" position="0 -1 -.5" rotation="0 0 0" material="side: double; color: #B0AFAE; repeat: 3.5 5">
-				<a-entity geometry="primitive: box; width: 1.3; height: 1.3; depth: .1" position="0 0 -1" rotation="0 0 0" material="side: double; color: #B0AFAE; repeat: 3.5 5"></a-entity>
-				<a-entity geometry="primitive: box; width: 1.3; height: 1.3; depth: .1" position="0 0 .4" rotation="0 0 0" material="side: double; color: #B0AFAE; repeat: 3.5 5"></a-entity>
-			</a-entity>
-
-			<!-- left statue pedastel -->
-          	<a-entity geometry="primitive: box; width: 1; height: 1; depth: 2" position="0 -9 -.5" rotation="0 0 0" material="side: double; color: #B0AFAE; repeat: 3.5 5">
-				<a-entity geometry="primitive: box; width: 1.3; height: 1.3; depth: .1" position="0 0 -1" rotation="0 0 0" material="side: double; color: #B0AFAE; repeat: 3.5 5"></a-entity>
-				<a-entity geometry="primitive: box; width: 1.3; height: 1.3; depth: .1" position="0 0 .4" rotation="0 0 0" material="side: double; color: #B0AFAE; repeat: 3.5 5"></a-entity>
-			</a-entity>
-          </a-entity>
+         
 
           
 		</a-entity>
